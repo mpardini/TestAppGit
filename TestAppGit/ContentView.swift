@@ -13,14 +13,11 @@ struct ContentView: View {
         ZStack {
             Color(.systemMint)
                 .ignoresSafeArea()
-            
-        
             VStack(alignment: .leading, spacing: 20.0) {
                 Image("niagarafalls")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(15)
-                
                 HStack {
                     Text("Niagara Falls")
                         .font(.title)
@@ -35,18 +32,13 @@ struct ContentView: View {
                             Image(systemName: "star.fill")
                             Image(systemName: "star.leadinghalf.filled")
                         }
-
-                        
                         Text("(Reviews 300)")
                             .font(.caption)
                     }
                     .foregroundColor(.orange)
                     .font(.caption)
-                    
                 }
-                
                 Text("Come visit the falls!")
-                
                 HStack {
                     Spacer()
                     Image(systemName: "fork.knife")
@@ -54,11 +46,7 @@ struct ContentView: View {
                 }
                 .foregroundColor(.gray)
                 .font(.caption)
-                
-                
-                    
             }
-            
             .padding()
             .background(Rectangle()
                 .foregroundColor(.white)
@@ -66,8 +54,6 @@ struct ContentView: View {
                 .shadow(radius: 15))
             .padding()
         }
-        
-        
     }
 }
 
